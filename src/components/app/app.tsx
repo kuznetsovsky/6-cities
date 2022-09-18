@@ -1,4 +1,7 @@
+// Pages
+import MainPage from '../../pages/main-page/main-page';
+
 // Components
 export const App = () => (
-  <h1>Six Cities</h1>
+  <MainPage />
 );
