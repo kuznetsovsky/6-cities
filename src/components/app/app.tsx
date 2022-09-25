@@ -9,6 +9,7 @@ import Main from '../../pages/main-page/main-page';
 import SignIn from '../../pages/sign-in-page/sign-in-page';
 import Room from '../../pages/room-page/room-page';
 import Favorite from '../../pages/favorite-page/favorite-page';
+import NotFound from '../../pages/not-found-page/not-found-page';
 
 // Components
 export const App = (): JSX.Element => (
@@ -29,6 +30,10 @@ export const App = (): JSX.Element => (
       <Route
         path={AppRoute.Favorites}
         element={<Favorite />}
+      />
+      <Route
+        path={AppRoute.Other}
+        element={<NotFound />}
       />
     </Routes>
   </BrowserRouter>
