@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Others
 import { AppRoute } from '../../consts';
+import { PrivateRoute } from '../private-route';
 
 // Pages
 import Main from '../../pages/main-page/main-page';
@@ -29,7 +30,11 @@ export const App = (): JSX.Element => (
       />
       <Route
         path={AppRoute.Favorites}
-        element={<Favorite />}
+        element={
+          <PrivateRoute>
+            <Favorite />
+          </PrivateRoute>
+        }
       />
       <Route
         path={AppRoute.Other}

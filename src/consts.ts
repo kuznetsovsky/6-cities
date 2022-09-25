@@ -1,3 +1,5 @@
+export const IS_AUTHORIZATION = false;
+
 export enum AppRoute {
   Root = '/',
   SignIn = '/login',
